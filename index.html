@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BuyandBliss — Shop the best deals on shoes, clothing, electronics, home appliances, and more. Fast delivery, easy returns.">
+  <title>BuyandBliss — Your Premium Shopping Destination</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span class="logo__icon"><i class="fas fa-bag-shopping"></i></span>
+        <span class="logo__text">Buy<span class="logo__accent">&</span>Bliss</span>
+      </a>
+
+      <nav class="header__nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active">Home</a></li>
+          <li><a href="#products" class="nav__link">Shop</a></li>
+          <li><a href="#categories" class="nav__link">Categories</a></li>
+          <li><a href="#footer" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="search-bar" id="searchBar">
+          <input type="text" placeholder="Search products..." id="searchInput" class="search-bar__input" autocomplete="off">
+          <button class="search-bar__btn" id="searchBtn" aria-label="Search">
+            <i class="fas fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <button class="header__cart-btn" id="cartToggle" aria-label="Open cart">
+          <i class="fas fa-cart-shopping"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="header__menu-btn" id="menuToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO SLIDER ============ -->
+  <section class="hero" id="home">
+    <div class="hero__slider" id="heroSlider">
+      <div class="hero__slide active" style="background-image: url('https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&w=1260')">
+        <div class="hero__content">
+          <span class="hero__tag">New Collection 2025</span>
+          <h1 class="hero__title">Discover Your<br><span>Perfect Style</span></h1>
+          <p class="hero__subtitle">Explore the latest trends in fashion, electronics & home essentials</p>
+          <a href="#products" class="btn btn--primary btn--lg">Shop Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="hero__slide" style="background-image: url('https://images.pexels.com/photos/3962294/pexels-photo-3962294.jpeg?auto=compress&cs=tinysrgb&w=1260')">
+        <div class="hero__content">
+          <span class="hero__tag">Limited Offer</span>
+          <h1 class="hero__title">Up to 50% Off<br><span>Electronics</span></h1>
+          <p class="hero__subtitle">Laptops, smartphones, TVs and more at unbeatable prices</p>
+          <a href="#products" class="btn btn--primary btn--lg">Browse Deals <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="hero__slide" style="background-image: url('https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260')">
+        <div class="hero__content">
+          <span class="hero__tag">Free Shipping</span>
+          <h1 class="hero__title">Home Essentials<br><span>You'll Love</span></h1>
+          <p class="hero__subtitle">Transform your living space with our curated home collection</p>
+          <a href="#products" class="btn btn--primary btn--lg">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__dots" id="heroDots"></div>
+    <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+    <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+  </section>
+
+  <!-- ============ FEATURES BAR ============ -->
+  <section class="features">
+    <div class="features__container">
+      <div class="feature">
+        <i class="fas fa-truck-fast"></i>
+        <div><h4>Free Shipping</h4><p>On orders over $50</p></div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-rotate-left"></i>
+        <div><h4>Easy Returns</h4><p>30-day return policy</p></div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-shield-halved"></i>
+        <div><h4>Secure Payment</h4><p>100% secure checkout</p></div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-headset"></i>
+        <div><h4>24/7 Support</h4><p>Dedicated support</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="products" id="products">
+    <div class="products__container">
+      <div class="products__header">
+        <h2 class="section-title">Our Products</h2>
+        <p class="section-subtitle">Discover our curated collection of premium products</p>
+      </div>
+
+      <div class="products__filters" id="categoryFilters">
+        <button class="filter-btn active" data-category="All">All</button>
+        <button class="filter-btn" data-category="Fashion">Fashion</button>
+        <button class="filter-btn" data-category="Electronics">Electronics</button>
+        <button class="filter-btn" data-category="Home">Home</button>
+        <button class="filter-btn" data-category="Accessories">Accessories</button>
+      </div>
+
+      <div class="products__grid" id="productsGrid">
+        <!-- Products dynamically injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CART SIDEBAR ============ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-sidebar__header">
+      <h3><i class="fas fa-cart-shopping"></i> Your Cart</h3>
+      <button class="cart-sidebar__close" id="cartClose" aria-label="Close cart">
+        <i class="fas fa-xmark"></i>
+      </button>
+    </div>
+    <div class="cart-sidebar__items" id="cartItems">
+      <!-- Cart items dynamically injected -->
+    </div>
+    <div class="cart-sidebar__empty" id="cartEmpty">
+      <i class="fas fa-cart-plus"></i>
+      <p>Your cart is empty</p>
+      <a href="#products" class="btn btn--primary" id="cartShopNow">Shop Now</a>
+    </div>
+    <div class="cart-sidebar__footer" id="cartFooter">
+      <div class="cart-sidebar__total">
+        <span>Total</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button class="btn btn--primary btn--full" id="checkoutBtn">
+        Checkout <i class="fas fa-arrow-right"></i>
+      </button>
+      <button class="btn btn--outline btn--full" id="clearCartBtn">
+        Clear Cart
+      </button>
+    </div>
+  </aside>
+
+  <!-- ============ TOAST NOTIFICATION ============ -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <a href="#" class="header__logo">
+          <span class="logo__icon"><i class="fas fa-bag-shopping"></i></span>
+          <span class="logo__text">Buy<span class="logo__accent">&</span>Bliss</span>
+        </a>
+        <p>Your premium one-stop shopping destination for fashion, electronics, and home essentials.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#products">All Products</a></li>
+          <li><a href="#">Sell Products</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Advertise</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Cash Back</a></li>
+          <li><a href="#">Affiliate Marketing</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Get Help</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 <strong>BuyandBliss</strong>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
