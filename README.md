@@ -20,10 +20,6 @@ BuyandBliss is a modern, responsive e‑commerce platform built with **Vite** fo
 
 ## Getting Started
 ```bash
-# Clone the repo
-git clone https://github.com/SrihariharanM8132/ecommerece-website.git
-cd ecommerece-website
-
 # Install dependencies
 npm install
 
