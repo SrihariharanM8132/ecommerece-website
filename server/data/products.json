@@ -4,7 +4,7 @@
     "name": "Running Shoes",
     "price": 49.99,
     "category": "Fashion",
-    "image": "https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "Lightweight breathable running shoes with cushioned sole for maximum comfort.",
     "rating": 4.5
   },
@@ -13,7 +13,7 @@
     "name": "Men's T-Shirt",
     "price": 24.99,
     "category": "Fashion",
-    "image": "https://images.pexels.com/photos/3649765/pexels-photo-3649765.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "Premium cotton casual t-shirt with a modern slim fit design.",
     "rating": 4.2
   },
@@ -22,7 +22,7 @@
     "name": "Denim Jeans",
     "price": 59.99,
     "category": "Fashion",
-    "image": "https://images.pexels.com/photos/52518/jeans-pants-blue-shop-52518.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/1082529/pexels-photo-1082529.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "Classic blue denim jeans with stretch fit and durable stitching.",
     "rating": 4.3
   },
@@ -31,7 +31,7 @@
     "name": "Luxury Watch",
     "price": 129.99,
     "category": "Accessories",
-    "image": "https://images.pexels.com/photos/8839887/pexels-photo-8839887.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "Elegant wristwatch with stainless steel band and water resistance.",
     "rating": 4.7
   },
@@ -40,7 +40,7 @@
     "name": "Smartphone",
     "price": 699.99,
     "category": "Electronics",
-    "image": "https://images.pexels.com/photos/6858618/pexels-photo-6858618.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "Latest smartphone with AMOLED display, 128GB storage, and 48MP camera.",
     "rating": 4.6
   },
@@ -49,7 +49,7 @@
     "name": "Smart Television",
     "price": 449.99,
     "category": "Electronics",
-    "image": "https://images.pexels.com/photos/5552789/pexels-photo-5552789.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/6976103/pexels-photo-6976103.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "55-inch 4K UHD Smart TV with HDR and built-in streaming apps.",
     "rating": 4.4
   },
@@ -58,7 +58,7 @@
     "name": "Hoodie",
     "price": 39.99,
     "category": "Fashion",
-    "image": "https://images.pexels.com/photos/4295985/pexels-photo-4295985.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/6311646/pexels-photo-6311646.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "Cozy fleece-lined hoodie with kangaroo pocket and adjustable drawstring.",
     "rating": 4.1
   },
@@ -67,7 +67,7 @@
     "name": "Dinner Set",
     "price": 79.99,
     "category": "Home",
-    "image": "https://images.pexels.com/photos/5638732/pexels-photo-5638732.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/6270541/pexels-photo-6270541.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "13-piece premium ceramic dinner set with elegant floral patterns.",
     "rating": 4.0
   },
@@ -76,7 +76,7 @@
     "name": "Cozy Blanket",
     "price": 34.99,
     "category": "Home",
-    "image": "https://images.pexels.com/photos/6463348/pexels-photo-6463348.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/6585764/pexels-photo-6585764.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "Ultra-soft microfiber blanket, perfect for winter nights and cozy evenings.",
     "rating": 4.3
   },
@@ -85,7 +85,7 @@
     "name": "Laptop",
     "price": 999.99,
     "category": "Electronics",
-    "image": "https://images.pexels.com/photos/2659939/pexels-photo-2659939.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600",
     "description": "High-performance laptop with 16GB RAM, 512GB SSD, and 15.6\" FHD display.",
     "rating": 4.8
   },
@@ -94,7 +94,7 @@
     "name": "Microwave Oven",
     "price": 149.99,
     "category": "Home",
-    "image": "https://images.pexels.com/photos/3682584/pexels-photo-3682584.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/6996064/pexels-photo-6996064.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "1000W microwave oven with convection mode and auto-cook presets.",
     "rating": 4.2
   },
@@ -103,7 +103,7 @@
     "name": "Coffee Maker",
     "price": 89.99,
     "category": "Home",
-    "image": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/585753/pexels-photo-585753.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "12-cup programmable coffee maker with thermal carafe and brew strength control.",
     "rating": 4.5
   },
@@ -112,7 +112,7 @@
     "name": "Premium Bed",
     "price": 599.99,
     "category": "Home",
-    "image": "https://images.pexels.com/photos/6606354/pexels-photo-6606354.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "King-size bed frame with memory foam mattress and solid wood construction.",
     "rating": 4.6
   },
@@ -121,7 +121,7 @@
     "name": "Air Conditioner",
     "price": 549.99,
     "category": "Electronics",
-    "image": "https://images.pexels.com/photos/4271651/pexels-photo-4271651.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/5824519/pexels-photo-5824519.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "1.5-ton inverter split AC with fast cooling and energy-saving technology.",
     "rating": 4.4
   },
@@ -130,7 +130,7 @@
     "name": "Book Collection",
     "price": 29.99,
     "category": "Accessories",
-    "image": "https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "Curated collection of bestselling novels and self-improvement books.",
     "rating": 4.1
   },
@@ -139,7 +139,7 @@
     "name": "Stylish Handbag",
     "price": 79.99,
     "category": "Fashion",
-    "image": "https://images.pexels.com/photos/4339598/pexels-photo-4339598.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "Designer handbag with premium faux leather, multiple compartments, and gold accents.",
     "rating": 4.3
   },
@@ -148,7 +148,7 @@
     "name": "Traditional Saree",
     "price": 89.99,
     "category": "Fashion",
-    "image": "https://images.pexels.com/photos/2922569/pexels-photo-2922569.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "Elegant silk saree with rich zari border and intricate handwoven patterns.",
     "rating": 4.6
   },
@@ -157,7 +157,7 @@
     "name": "Washing Machine",
     "price": 399.99,
     "category": "Home",
-    "image": "https://images.pexels.com/photos/5816296/pexels-photo-5816296.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "https://images.pexels.com/photos/5591581/pexels-photo-5591581.jpeg?auto=compress&cs=tinysrgb&w=600",
     "description": "7kg fully automatic front-load washing machine with multiple wash programs.",
     "rating": 4.5
   }
