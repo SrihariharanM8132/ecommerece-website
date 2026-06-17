@@ -55,15 +55,7 @@ export function initCart() {
     showToast('Cart cleared', 'success');
   });
 
-  // Checkout
-  checkoutBtn.addEventListener('click', () => {
-    if (cart.length === 0) return;
-    showToast('Thank you! Order placed successfully 🎉', 'success');
-    cart = [];
-    saveCart();
-    renderCartItems();
-    setTimeout(() => closeCart(), 1500);
-  });
+  // Checkout is handled by forms.js (multi-step checkout panel)
 
   // Shop now button in empty cart
   cartShopNow.addEventListener('click', () => closeCart());

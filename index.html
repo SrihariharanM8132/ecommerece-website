@@ -145,7 +145,7 @@
     <div class="cart-sidebar__footer" id="cartFooter">
       <div class="cart-sidebar__total">
         <span>Total</span>
-        <span id="cartTotal">$0.00</span>
+        <span id="cartTotal">₹0</span>
       </div>
       <button class="btn btn--primary btn--full" id="checkoutBtn">
         Checkout <i class="fas fa-arrow-right"></i>
@@ -155,6 +155,188 @@
       </button>
     </div>
   </aside>
+
+  <!-- ============ CHECKOUT FORM (Slide-in Panel) ============ -->
+  <div class="panel-overlay" id="checkoutOverlay"></div>
+  <aside class="slide-panel" id="checkoutPanel">
+    <div class="slide-panel__header">
+      <h3><i class="fas fa-credit-card"></i> Checkout</h3>
+      <button class="slide-panel__close" id="checkoutClose" aria-label="Close checkout"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div class="slide-panel__body">
+      <!-- Step Indicators -->
+      <div class="checkout-steps" id="checkoutSteps">
+        <div class="checkout-step active" data-step="1"><span>1</span> Shipping</div>
+        <div class="checkout-step" data-step="2"><span>2</span> Payment</div>
+        <div class="checkout-step" data-step="3"><span>3</span> Confirm</div>
+      </div>
+
+      <!-- Step 1: Shipping -->
+      <div class="checkout-slide active" id="checkoutStep1">
+        <h4>Shipping Details</h4>
+        <div class="form-group">
+          <label for="ship-name">Full Name <span class="req">*</span></label>
+          <input type="text" id="ship-name" placeholder="e.g. Srihariharan M" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="ship-phone">Phone Number <span class="req">*</span></label>
+          <input type="tel" id="ship-phone" placeholder="+91 9876543210" required autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label for="ship-email">Email <span class="req">*</span></label>
+          <input type="email" id="ship-email" placeholder="you@email.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="ship-address">Address <span class="req">*</span></label>
+          <textarea id="ship-address" rows="3" placeholder="House No, Street, Area..." required></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="ship-city">City <span class="req">*</span></label>
+            <input type="text" id="ship-city" placeholder="Coimbatore" required>
+          </div>
+          <div class="form-group">
+            <label for="ship-pin">PIN Code <span class="req">*</span></label>
+            <input type="text" id="ship-pin" placeholder="641001" maxlength="6" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="ship-state">State</label>
+          <input type="text" id="ship-state" placeholder="Tamil Nadu" autocomplete="address-level1">
+        </div>
+        <button class="btn btn--primary btn--full" id="toStep2">Continue to Payment <i class="fas fa-arrow-right"></i></button>
+      </div>
+
+      <!-- Step 2: Payment -->
+      <div class="checkout-slide" id="checkoutStep2">
+        <h4>Payment Method</h4>
+        <div class="payment-options">
+          <label class="payment-option active">
+            <input type="radio" name="payment" value="cod" checked>
+            <div class="payment-option__card">
+              <i class="fas fa-money-bill-wave"></i>
+              <div><strong>Cash on Delivery</strong><p>Pay when you receive</p></div>
+            </div>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="payment" value="upi">
+            <div class="payment-option__card">
+              <i class="fas fa-mobile-screen-button"></i>
+              <div><strong>UPI Payment</strong><p>Google Pay, PhonePe, Paytm</p></div>
+            </div>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="payment" value="card">
+            <div class="payment-option__card">
+              <i class="fas fa-credit-card"></i>
+              <div><strong>Credit / Debit Card</strong><p>Visa, Mastercard, RuPay</p></div>
+            </div>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="payment" value="netbanking">
+            <div class="payment-option__card">
+              <i class="fas fa-building-columns"></i>
+              <div><strong>Net Banking</strong><p>All major banks</p></div>
+            </div>
+          </label>
+        </div>
+        <div class="checkout-order-summary" id="checkoutSummary">
+          <!-- Order summary dynamically injected -->
+        </div>
+        <div class="form-row">
+          <button class="btn btn--outline btn--full" id="backToStep1"><i class="fas fa-arrow-left"></i> Back</button>
+          <button class="btn btn--primary btn--full" id="toStep3">Place Order <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Step 3: Confirmation -->
+      <div class="checkout-slide" id="checkoutStep3">
+        <div class="checkout-success">
+          <div class="checkout-success__icon"><i class="fas fa-circle-check"></i></div>
+          <h4>Order Placed Successfully!</h4>
+          <p>Thank you for your purchase. Your order has been confirmed.</p>
+          <div class="order-id" id="orderId"></div>
+          <p class="order-note">You will receive a confirmation email shortly.</p>
+          <button class="btn btn--primary btn--full" id="continueShopping">Continue Shopping <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============ FEEDBACK FORM (Slide-in Panel) ============ -->
+  <div class="panel-overlay" id="feedbackOverlay"></div>
+  <aside class="slide-panel slide-panel--left" id="feedbackPanel">
+    <div class="slide-panel__header">
+      <h3><i class="fas fa-comment-dots"></i> Feedback</h3>
+      <button class="slide-panel__close" id="feedbackClose" aria-label="Close feedback"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div class="slide-panel__body">
+      <div class="feedback-form">
+        <h4>We'd love your feedback!</h4>
+        <p class="feedback-subtitle">Help us improve your shopping experience</p>
+
+        <div class="form-group">
+          <label>How would you rate your experience? <span class="req">*</span></label>
+          <div class="star-rating" id="feedbackStars">
+            <button class="star-btn" data-rating="1" aria-label="1 star"><i class="far fa-star"></i></button>
+            <button class="star-btn" data-rating="2" aria-label="2 stars"><i class="far fa-star"></i></button>
+            <button class="star-btn" data-rating="3" aria-label="3 stars"><i class="far fa-star"></i></button>
+            <button class="star-btn" data-rating="4" aria-label="4 stars"><i class="far fa-star"></i></button>
+            <button class="star-btn" data-rating="5" aria-label="5 stars"><i class="far fa-star"></i></button>
+          </div>
+          <span class="rating-text" id="ratingText">Select a rating</span>
+        </div>
+
+        <div class="form-group">
+          <label for="feedback-name">Your Name</label>
+          <input type="text" id="feedback-name" placeholder="e.g. Srihariharan" autocomplete="name">
+        </div>
+
+        <div class="form-group">
+          <label for="feedback-email">Email (optional)</label>
+          <input type="email" id="feedback-email" placeholder="you@email.com" autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="feedback-category">Category</label>
+          <select id="feedback-category">
+            <option value="">Select a category</option>
+            <option value="products">Products</option>
+            <option value="delivery">Delivery</option>
+            <option value="website">Website Experience</option>
+            <option value="customer-service">Customer Service</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="feedback-review">Your Review <span class="req">*</span></label>
+          <textarea id="feedback-review" rows="4" placeholder="Tell us what you think..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="feedback-suggestions">Suggestions for Improvement</label>
+          <textarea id="feedback-suggestions" rows="3" placeholder="Any ideas to make things better?"></textarea>
+        </div>
+
+        <button class="btn btn--primary btn--full" id="submitFeedback">
+          Submit Feedback <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+
+      <div class="feedback-success" id="feedbackSuccess" style="display:none;">
+        <div class="checkout-success__icon"><i class="fas fa-heart"></i></div>
+        <h4>Thank You!</h4>
+        <p>Your feedback has been submitted. We truly appreciate it!</p>
+        <button class="btn btn--primary btn--full" id="feedbackDone">Done <i class="fas fa-check"></i></button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Feedback Floating Button -->
+  <button class="feedback-fab" id="feedbackFab" aria-label="Give feedback">
+    <i class="fas fa-comment-dots"></i>
+  </button>
 
   <!-- ============ TOAST NOTIFICATION ============ -->
   <div class="toast-container" id="toastContainer"></div>
