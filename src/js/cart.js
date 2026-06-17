@@ -195,7 +195,7 @@ function renderCartItems() {
 
   // Calculate total
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  totalEl.textContent = `$${total.toFixed(2)}`;
+  totalEl.textContent = `₹${total.toLocaleString('en-IN')}`;
 
   // Render items
   itemsContainer.innerHTML = cart.map(item => `
@@ -205,7 +205,7 @@ function renderCartItems() {
       </div>
       <div class="cart-item__details">
         <div class="cart-item__name">${item.name}</div>
-        <div class="cart-item__price">$${(item.price * item.quantity).toFixed(2)}</div>
+        <div class="cart-item__price">₹${(item.price * item.quantity).toLocaleString('en-IN')}</div>
         <div class="cart-item__actions">
           <button class="qty-btn qty-minus" data-id="${item.productId}" aria-label="Decrease quantity">
             <i class="fas fa-minus"></i>

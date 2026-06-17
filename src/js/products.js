@@ -139,7 +139,7 @@ function createProductCard(product) {
         <h3 class="product-card__name">${product.name}</h3>
         <p class="product-card__desc">${product.description}</p>
         <div class="product-card__bottom">
-          <span class="product-card__price">$${product.price.toFixed(2)}</span>
+          <span class="product-card__price">₹${product.price.toLocaleString('en-IN')}</span>
           <div class="product-card__rating">
             ${stars}
             <span>${product.rating}</span>
